@@ -10,7 +10,7 @@ public class atm
         	Connection con=null;
        try {
                Class.forName("com.mysql.jdbc.Driver");
-//                DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+  //              DriverManager.registerDriver(new com.mysql.jdbc.Driver());
     	         con =  DriverManager.getConnection("jdbc:mysql://localhost:3306/shivam","root","");
                String q="insert into atm(serialno,name,pin,balance) values(?,?,?,?)";
 //               PreparedStatement pstmt=con.prepareStatement(q);
